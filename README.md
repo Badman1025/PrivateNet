@@ -1,6 +1,6 @@
 # Feng's Homepage - Personal Entertainment Collection Site
 
-A modern personal entertainment collection website showcasing various practical tools, entertainment resources, and research platforms. Built with cutting-edge web technologies featuring smooth animations, responsive design, and excellent user experience.
+A modern personal entertainment collection website showcasing various practical tools, entertainment resources, and research platforms. Built with cutting-edge web technologies featuring smooth animations, responsive design, and excellent user experience.[Domain: 2027.02.28]
 
 ## 🚀 Features
 
