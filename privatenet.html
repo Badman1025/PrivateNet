@@ -66,11 +66,42 @@
                     <button id="theme-toggle" class="theme-btn" aria-label="切换主题">
                         <i class="fas fa-moon"></i>
                     </button>
-                    <button id="menu-toggle" class="menu-btn" aria-label="打开菜单">
+                    <button id="menu-toggle" class="menu-btn" aria-label="打开分类导航">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
+                    <nav id="quick-nav" class="quick-nav" aria-label="分类快速导航">
+                        <div class="quick-nav-head">
+                            <i class="fas fa-compass"></i>
+                            <span>分类导航</span>
+                        </div>
+                        <a href="#daily-recommendation" class="quick-nav-item">
+                            <span class="quick-nav-icon"><i class="fas fa-star"></i></span>
+                            <span class="quick-nav-label">今日好心情</span>
+                            <span class="quick-nav-count">推荐</span>
+                        </a>
+                        <a href="#entertainment-section" class="quick-nav-item">
+                            <span class="quick-nav-icon"><i class="fas fa-gamepad"></i></span>
+                            <span class="quick-nav-label">娱乐类</span>
+                            <span class="quick-nav-count">8</span>
+                        </a>
+                        <a href="#tools-section" class="quick-nav-item">
+                            <span class="quick-nav-icon"><i class="fas fa-tools"></i></span>
+                            <span class="quick-nav-label">工具类</span>
+                            <span class="quick-nav-count">7</span>
+                        </a>
+                        <a href="#research-section" class="quick-nav-item">
+                            <span class="quick-nav-icon"><i class="fas fa-microscope"></i></span>
+                            <span class="quick-nav-label">科研类</span>
+                            <span class="quick-nav-count">7</span>
+                        </a>
+                        <a href="#management-section" class="quick-nav-item">
+                            <span class="quick-nav-icon"><i class="fas fa-cog"></i></span>
+                            <span class="quick-nav-label">管理类</span>
+                            <span class="quick-nav-count">12</span>
+                        </a>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -96,14 +127,16 @@
                     <!-- 摩羯座运势推荐 -->
                     <div class="recommendation-card zodiac-card">
                         <div class="recommendation-content">
-                            <div class="">
-                            <img src="assets/images/mojie.png" alt="运势" class="site-icon">
+                            <div class="recommendation-icon zodiac-icon">
+                                <img src="assets/images/mojie.png" alt="摩羯座运势" class="site-icon">
                             </div>
                             <div class="recommendation-info">
-                            <h3>摩羯座今日运势</h3>
+                                <h3>摩羯座今日运势</h3>
                                 <p>了解今日运势，规划美好生活</p>
-                                <span class="">♈️ 星座</span>
-                                <span class="">🔆 今日</span>
+                                <div class="recommendation-meta">
+                                    <span class="rec-category">♈️ 星座</span>
+                                    <span class="rec-rating">🔆 今日</span>
+                                </div>
                             </div>
                         </div>
                         <div class="recommendation-actions">
@@ -157,7 +190,7 @@
                 
                 <div class="category-grid">
                     <div class="quick-card" onclick="window.open('https://pp510.com/frim/index13.html', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/dandanjv.png" alt="蛋蛋影视" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -168,7 +201,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://www.dadatu4080.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/dadaqu.png" alt="达达兔" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -179,7 +212,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://www.bilibili.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/bilibli.png" alt="Bilibili" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -190,7 +223,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://www.dbku.tv/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/dbku.png" alt="DBKU" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -201,7 +234,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://www.msn.cn/zh-cn/play', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/msn.png" alt="MSNBC" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -212,7 +245,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://retrogamesnexus.com/zh', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/retrogamesnexus.png" alt="RetroGamesNexus" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -223,7 +256,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://projext.run', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/projext.png" alt="Projext" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -234,7 +267,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://game.haiyong.site/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/haiyong.png" alt="海拥游戏" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -260,7 +293,7 @@
                 
                 <div class="category-grid">
                     <div class="quick-card" onclick="window.open('https://www.xue51.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/xuetang.png" alt="软件学堂" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -271,7 +304,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://tools.pdf24.org/zh/all-tools', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/PDF24.png" alt="PDF24" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -282,7 +315,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://www.cleverpdf.com/cn', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/clever.png" alt="CleverPDF" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -293,7 +326,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://see-tool.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/see-tool.png" alt="See-Tool" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -304,12 +337,34 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://downloader.bhwa233.com/zh', '_blank')">
-                        <div class="">
-                            <img src="assets/images/shipinjiexi.png" alt="downloader" class="site-icon">
+                        <div class="quick-icon">
+                            <img src="assets/images/shipinjiexi.png" alt="视频解析" class="site-icon">
                         </div>
                         <div class="quick-info">
-                            <h4>downloader</h4>
+                            <h4>视频解析</h4>
                             <p>多平台视频解析</p>
+                        </div>
+                        <div class="quick-badge">🛠️</div>
+                    </div>
+
+                    <div class="quick-card" onclick="window.open('https://www.aigc.cn/#term-1913-184', '_blank')">
+                        <div class="quick-icon">
+                            <img src="assets/images/AIGC.png" alt="AIGC导航" class="site-icon">
+                        </div>
+                        <div class="quick-info">
+                            <h4>AIGC导航</h4>
+                            <p>AI 平台资源</p>
+                        </div>
+                        <div class="quick-badge">🛠️</div>
+                    </div>
+
+                    <div class="quick-card" onclick="window.open('https://ai-bot.cn/#term-7', '_blank')">
+                        <div class="quick-icon">
+                            <img src="assets/images/AI-Tools.png" alt="AI工具集" class="site-icon">
+                        </div>
+                        <div class="quick-info">
+                            <h4>AI工具集</h4>
+                            <p>AI 工具导航</p>
                         </div>
                         <div class="quick-badge">🛠️</div>
                     </div>
@@ -330,7 +385,7 @@
                 
                 <div class="category-grid">
                     <div class="quick-card" onclick="window.open('https://github.com/Badman1025', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/github.png" alt="GitHub" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -341,7 +396,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://scholar.rjmart.cn/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/ruijing.png" alt="锐竞学术" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -352,7 +407,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://ibs.renlab.org/#/home', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/IBS.png" alt="IBS 2.0" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -363,7 +418,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://www.biorender.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/biorender.png" alt="Biorender" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -374,7 +429,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://biogdp.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/biogdp.png" alt="BioGDP" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -385,7 +440,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://www.freepik.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/huitu.png" alt="FreePik" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -396,7 +451,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://www.picdoc.cn/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/PicDoc.png" alt="PicDoc" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -422,7 +477,7 @@
                 
                 <div class="category-grid">
                     <div class="quick-card" onclick="window.open('https://mp.weixin.qq.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/wechat.png" alt="微信公众平台" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -433,7 +488,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://doc.wzfj.cc/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/wzfj.png" alt="微附件X" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -444,7 +499,7 @@
                     </div>
                     
                     <div class="quick-card" onclick="window.open('https://doc.uomo.cc/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/WEI.png" alt="微附件" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -455,7 +510,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://digitalplat.org/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/digitalplat.png" alt="digitalplat平台" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -466,7 +521,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://dash.cloudflare.com/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/cloudflare.png" alt="CloudFlare" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -477,7 +532,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://apa-early-embryo-development.imustbioinfo.cn/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/APA.png" alt="CloudFlare" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -488,7 +543,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://pinme.eth.limo/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/PinMe.png" alt="CloudFlare" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -499,7 +554,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://uupdump.net/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/UUPdump.png" alt="uupdump" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -510,7 +565,7 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://www.notion.so/imustbioinfo/Academic-CV-34b6eea8667881ae9789dc80b8fde11b/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/notion.png" alt="notion" class="site-icon">
                         </div>
                         <div class="quick-info">
@@ -521,12 +576,34 @@
                     </div>
 
                     <div class="quick-card" onclick="window.open('https://spermapa.imustbioinfo.cn/', '_blank')">
-                        <div class="">
+                        <div class="quick-icon">
                             <img src="assets/images/spermapa.png" alt="spermapa" class="site-icon">
                         </div>
                         <div class="quick-info">
                             <h4>SpermAPA</h4>
                             <p>精子异常的APA数据库网站</p>
+                        </div>
+                        <div class="quick-badge">🌐</div>
+                    </div>
+
+                    <div class="quick-card" onclick="window.open('https://my.dnshe.com', '_blank')">
+                        <div class="quick-icon">
+                            <img src="assets/images/DNSHE.png" alt="DNSHE" class="site-icon">
+                        </div>
+                        <div class="quick-info">
+                            <h4>DNSHE</h4>
+                            <p>免费域名</p>
+                        </div>
+                        <div class="quick-badge">🌐</div>
+                    </div>
+
+                    <div class="quick-card" onclick="window.open('https://domain.stackryze.com', '_blank')">
+                        <div class="quick-icon">
+                            <img src="assets/images/stackryze.png" alt="stackryze" class="site-icon">
+                        </div>
+                        <div class="quick-info">
+                            <h4>stackryze</h4>
+                            <p>免费域名</p>
                         </div>
                         <div class="quick-badge">🌐</div>
                     </div>

@@ -22,7 +22,6 @@ class EntertainmentApp {
         this.setupNoteEditor();
         this.setupToolActions();
         this.setupRecommendationSystem();
-        this.setupMobileMenu();
         this.setupAnimations();
         this.renderStats();
     }
@@ -390,27 +389,6 @@ class EntertainmentApp {
         
         if (actionBtn) {
             actionBtn.onclick = this.todayRecommendation.action;
-        }
-    }
-    
-    // Mobile Menu
-    setupMobileMenu() {
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if (menuToggle && mobileMenu) {
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('active');
-                menuToggle.classList.toggle('active');
-            });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-                    mobileMenu.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                }
-            });
         }
     }
     
